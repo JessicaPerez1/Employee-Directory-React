@@ -1,4 +1,5 @@
 import React from "react";
+import painters from "../painters.json";
 
 const tableStyle = {
   margin: "10px 40px 10px 40px",
@@ -6,37 +7,46 @@ const tableStyle = {
     width: 50,
   },
 };
-function Table() {
-  return (
-    <div style={tableStyle}>
-      <table className="table">
-        <thead className="thead-dark">
-          <tr>
-            <th scope="col">Image</th>
-            <th scope="col">Name</th>
-            <th scope="col">Type</th>
-            <th scope="col">DOB</th>
-            <th scope="col">Email</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th scope="row">
-              <img
-                src="https://www.nationalgeographic.com/content/dam/news/2017/11/2/book-talk-leonardo-da-vinci/01-leonardo-da-vinci-book-talk.jpg"
-                alt="Da Vinci portrait"
-                style={tableStyle.image}
-              ></img>
-            </th>
-            <td>Leonardo Da Vinci</td>
-            <td>Painter/Sculptor</td>
-            <td>1452</td>
-            <td>leodavinci@vatican.com</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-  );
+
+class Table extends React.Component {
+  state = { painters: painters };
+
+  render() {
+    console.log(this.state.painters);
+    return (
+      <div style={tableStyle}>
+        <table className="table">
+          <thead className="thead-dark">
+            <tr>
+              <th scope="col">Image</th>
+              <th scope="col">Name</th>
+              <th scope="col">Type</th>
+              <th scope="col">DOB</th>
+              <th scope="col">Email</th>
+            </tr>
+          </thead>
+          <tbody>
+            {/* creating a new row for each painter */}
+            {this.state.painters.map((painter) => (
+              <tr>
+                <th scope="row">
+                  <img
+                    src={painter.image}
+                    alt={painter.name}
+                    style={tableStyle.image}
+                  ></img>
+                </th>
+                <td>{painter.name}</td>
+                <td>{painter.type}</td>
+                <td>{painter.DOB}</td>
+                <td>{painter.email}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    );
+  }
 }
 
 export default Table;
