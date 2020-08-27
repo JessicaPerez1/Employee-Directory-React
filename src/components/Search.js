@@ -3,10 +3,11 @@ import React from "react";
 const searchStyle = {
   width: 300,
   margin: "0 auto",
+  border: "pink solid 5",
 };
 function Search() {
   return (
-    <div className="active-pink-3 active-pink-4 mb-4" style={searchStyle}>
+    <div className="searchbar" style={searchStyle}>
       <input
         className="form-control"
         type="text"

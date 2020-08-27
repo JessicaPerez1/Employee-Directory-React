@@ -1,10 +1,10 @@
 import React from "react";
-//import logo from './logo.svg';
-import "./App.css";
+//import "./App.css";
 
 import Navbar from "./components/Navbar";
 import Search from "./components/Search";
 import Table from "./components/Table";
+//import painters from "./painters.json";
 
 function App() {
   return (
