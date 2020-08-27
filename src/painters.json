@@ -1,16 +1,51 @@
 [
   {
-    "image": "https://www.nationalgeographic.com/content/dam/news/2017/11/2/book-talk-leonardo-da-vinci/01-leonardo-da-vinci-book-talk.jpg",
+    "image": "https://media.allure.com/photos/5b02f51b7fb5f468b8a31e0c/1:1/w_3447,h_3447,c_limit/GettyImages-113493446.jpg",
     "name": "Leonardo Da Vinci",
-    "type": "Painter/Sculptor",
-    "DOB": "1452",
+    "nationality": "Italian",
+    "DOB": " April 15, 1452",
     "email": "leodavinci@vatican.com"
   },
   {
-    "image": "https://www.nationalgeographic.com/content/dam/news/2017/11/2/book-talk-leonardo-da-vinci/01-leonardo-da-vinci-book-talk.jpg",
-    "name": "Leonardo",
-    "type": "Singer",
-    "DOB": "1990",
-    "email": "leodavinci@vatican.com"
+    "image": "https://i.pinimg.com/originals/af/b5/6b/afb56ba807ce8cec6d3cf685b6e4ded3.jpg",
+    "name": "Paul Cezanne",
+    "nationality": "French",
+    "DOB": " January 19, 1839",
+    "email": "iampaulo@paris.com"
+  },
+  {
+    "image": "https://uploads5.wikiart.org/images/salvador-dali.jpg!Portrait.jpg",
+    "name": "Salvador Dalí",
+    "nationality": "Spanish",
+    "DOB": "May 11, 1904",
+    "email": "dali@cutear.com"
+  },
+  {
+    "image": "https://upload.wikimedia.org/wikipedia/en/1/1e/Frida_Kahlo_%28self_portrait%29.jpg",
+    "name": "Frida Kahlo",
+    "nationality": "Mexican",
+    "DOB": "July 6, 1907",
+    "email": "frida@mexico.com"
+  },
+  {
+    "image": "https://ipaintings.com/images/john-singer-sargent-paintings-portrait-of-madame-x-madame-pierre-gautreau/29555/600x600/LF3522.jpg",
+    "name": "John Singer Sargent",
+    "nationality": "American",
+    "DOB": " January 12, 1856",
+    "email": "singer@madamex.com"
+  },
+  {
+    "image": "https://listovative.com/wp-content/uploads/2016/04/the-weeping-woman.jpg",
+    "name": "Pablo Picasso",
+    "nationality": "Spanish",
+    "DOB": "October 25, 1881",
+    "email": "pablo@guernica.com"
+  },
+  {
+    "image": "https://doagahehoc242.cloudfront.net/uploads/artists/2123/f4802b22_schermata-2020-02-06-alle-143622.png",
+    "name": "René Magritte",
+    "nationality": "Belgian",
+    "DOB": "November 21, 1898",
+    "email": "rene@notapipe.com"
   }
 ]

@@ -4,7 +4,7 @@ import painters from "../painters.json";
 const tableStyle = {
   margin: "10px 40px 10px 40px",
   image: {
-    width: 50,
+    width: 140,
   },
 };
 
@@ -18,9 +18,10 @@ class Table extends React.Component {
         <table className="table">
           <thead className="thead-dark">
             <tr>
+              {/* include onclick */}
               <th scope="col">Image</th>
               <th scope="col">Name</th>
-              <th scope="col">Type</th>
+              <th scope="col">Nationality</th>
               <th scope="col">DOB</th>
               <th scope="col">Email</th>
             </tr>
@@ -37,7 +38,7 @@ class Table extends React.Component {
                   ></img>
                 </th>
                 <td>{painter.name}</td>
-                <td>{painter.type}</td>
+                <td>{painter.nationality}</td>
                 <td>{painter.DOB}</td>
                 <td>{painter.email}</td>
               </tr>
