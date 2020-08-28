@@ -1,4 +1,4 @@
-# Nosql: Workout Tracker
+# REACT: FAMOUS PAINTERS ROLODEX
 
 ## Description
 
@@ -24,7 +24,7 @@ Created a painter directory with React. The user is able to search for famous pa
 
 ### App-screenshots
 
-![Famous Painters screenshot](assets/painters.png)
+![Famous Painters screenshot](public/painters.png)
 
 ### Questions
 

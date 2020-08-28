@@ -24,6 +24,7 @@ class Table extends React.Component {
     resultOrdered: [],
     resultFiltered: [],
     original: painters,
+    search: "",
   };
 
   //sort by NAME / alphabetical order
@@ -83,6 +84,7 @@ class Table extends React.Component {
             type="text"
             placeholder="Search"
             aria-label="Search"
+            name="search"
           />
         </div>
         <div style={tableStyle}>
