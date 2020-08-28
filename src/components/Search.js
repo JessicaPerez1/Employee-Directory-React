@@ -8,7 +8,7 @@ const searchStyle = {
 };
 
 class Search extends React.Component {
-  state = { search: "" };
+  state = { search: "", result: [] };
 
   handleInputChange = (event) => {
     // Getting the value and name of the input which triggered the change
