@@ -28,7 +28,7 @@
     "email": "frida@mexico.com"
   },
   {
-    "image": "https://ipaintings.com/images/john-singer-sargent-paintings-portrait-of-madame-x-madame-pierre-gautreau/29555/600x600/LF3522.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/a/a4/Madame_X_%28Madame_Pierre_Gautreau%29%2C_John_Singer_Sargent%2C_1884_%28unfree_frame_crop%29.jpg",
     "name": "John Singer Sargent",
     "nationality": "American",
     "DOB": " January 12, 1856",
@@ -102,7 +102,7 @@
     "name": "Hieronymus Bosch (Jeroen van Aken)",
     "nationality": "Dutch",
     "DOB": "year of 1450",
-    "email": "gustavo@gold.com"
+    "email": "vanaken@dutch.com"
   },
   {
     "image": "https://www.henrimatisse.org/images/gallery/the-dance.jpg",
@@ -138,5 +138,12 @@
     "nationality": "American",
     "DOB": "July 22, 1882",
     "email": "hopper@eddy.com"
+  },
+  {
+    "image": "https://cdn.britannica.com/78/43678-050-F4DC8D93/Starry-Night-canvas-Vincent-van-Gogh-New-1889.jpg",
+    "name": "Vincent van Gogh",
+    "nationality": "French",
+    "DOB": "March 30, 1853",
+    "email": "icanthearyou@ear.com"
   }
 ]

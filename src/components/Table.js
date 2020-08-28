@@ -16,16 +16,6 @@ class Table extends React.Component {
     return (
       <div style={tableStyle}>
         <table className="table">
-          <thead className="thead-dark">
-            <tr>
-              {/* include onclick */}
-              <th scope="col">Image</th>
-              <th scope="col">Name</th>
-              <th scope="col">Nationality</th>
-              <th scope="col">DOB</th>
-              <th scope="col">Email</th>
-            </tr>
-          </thead>
           <tbody>
             {this.state.painters.map((painter) => (
               <tr>

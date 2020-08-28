@@ -24,7 +24,7 @@ function Navbar() {
     <div style={navStyle.div}>
       <nav className="navbar justify-content-center navbar-light">
         <span className="navbar-brand h1" style={navStyle.title}>
-          Famous Painters Directory
+          The Famous Painter's Rolodex
         </span>
       </nav>
       <p style={navStyle.subtitle}>Look up your favorite painters!</p>

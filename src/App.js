@@ -3,6 +3,7 @@ import React from "react";
 
 import Navbar from "./components/Navbar";
 import Search from "./components/Search";
+import Head from "./components/Head";
 import Table from "./components/Table";
 //import painters from "./painters.json";
 
@@ -11,6 +12,7 @@ function App() {
     <div>
       <Navbar />
       <Search />
+      <Head />
       <Table />
     </div>
   );
