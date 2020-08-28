@@ -23,6 +23,7 @@ class Table extends React.Component {
     painters: painters,
     resultOrdered: [],
     resultFiltered: [],
+    original: painters,
   };
 
   //sort by NAME / alphabetical order
@@ -63,10 +64,12 @@ class Table extends React.Component {
     return this.setState({
       painters: newPainters,
     });
-    //
   };
-  resetPage = () => {
-    //once search is done, when onChange is done, set the state bakc to displaying the whole database
+
+  reset = () => {
+    this.setState({
+      original: painters,
+    });
   };
   render() {
     //console.log(this.state.painters);

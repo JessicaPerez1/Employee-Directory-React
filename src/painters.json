@@ -1,147 +1,168 @@
 [
   {
+    "id": "1",
     "image": "https://media.allure.com/photos/5b02f51b7fb5f468b8a31e0c/1:1/w_3447,h_3447,c_limit/GettyImages-113493446.jpg",
-    "name": "Leonardo Da Vinci",
+    "name": "Da Vinci Leonardo",
     "nationality": "Italian",
     "DOB": " April 15, 1452",
     "email": "leodavinci@vatican.com"
   },
   {
+    "id": "2",
     "image": "https://i.pinimg.com/originals/af/b5/6b/afb56ba807ce8cec6d3cf685b6e4ded3.jpg",
-    "name": "Paul Cezanne",
+    "name": "Cezanne Paul",
     "nationality": "French",
     "DOB": " January 19, 1839",
     "email": "iampaulo@paris.com"
   },
   {
+    "id": "3",
     "image": "https://uploads5.wikiart.org/images/salvador-dali.jpg!Portrait.jpg",
-    "name": "Salvador Dalí",
+    "name": "Dalí Salvador",
     "nationality": "Spanish",
     "DOB": "May 11, 1904",
     "email": "dali@mustache.com"
   },
   {
+    "id": "4",
     "image": "https://upload.wikimedia.org/wikipedia/en/1/1e/Frida_Kahlo_%28self_portrait%29.jpg",
-    "name": "Frida Kahlo",
+    "name": "Kahlo Frida",
     "nationality": "Mexican",
     "DOB": "July 6, 1907",
     "email": "frida@mexico.com"
   },
   {
+    "id": "5",
     "image": "https://upload.wikimedia.org/wikipedia/commons/a/a4/Madame_X_%28Madame_Pierre_Gautreau%29%2C_John_Singer_Sargent%2C_1884_%28unfree_frame_crop%29.jpg",
-    "name": "John Singer Sargent",
+    "name": "Singer Sargent John",
     "nationality": "American",
     "DOB": " January 12, 1856",
     "email": "singer@madamex.com"
   },
   {
+    "id": "6",
     "image": "https://listovative.com/wp-content/uploads/2016/04/the-weeping-woman.jpg",
-    "name": "Pablo Picasso",
+    "name": "Picasso Pablo",
     "nationality": "Spanish",
     "DOB": "October 25, 1881",
     "email": "pablo@guernica.com"
   },
   {
+    "id": "7",
     "image": "https://doagahehoc242.cloudfront.net/uploads/artists/2123/f4802b22_schermata-2020-02-06-alle-143622.png",
-    "name": "René Magritte",
+    "name": "Magritte René",
     "nationality": "Belgian",
     "DOB": "November 21, 1898",
     "email": "rene@notapipe.com"
   },
   {
+    "id": "8",
     "image": "https://imgc.artprintimages.com/img/print/the-birth-of-venus-c-1485_u-l-q1ga2dm0.jpg?h=550&p=0&w=550&background=fbfbfb",
-    "name": "Sandro Botticelli",
+    "name": "Botticelli Sandro",
     "nationality": "Italian",
     "DOB": "March 1, 1445",
     "email": "sandro@italy.com"
   },
   {
+    "id": "9",
     "image": "https://ichef.bbci.co.uk/images/ic/1920x1080/p06lfk6k.jpg",
-    "name": "Paul Gauguin",
+    "name": "Gauguin Paul",
     "nationality": "French",
     "DOB": "June 7, 1848",
     "email": "paul@sunlfower.com"
   },
   {
+    "id": "10",
     "image": "https://i.pinimg.com/originals/54/f1/0b/54f10b62cea34ab3bec0450ea8a6070d.jpg",
-    "name": "Maurits Cornelis Escher",
+    "name": "Escher Maurits Cornelis",
     "nationality": "Dutch",
     "DOB": "June 17, 1898",
     "email": "escherl@stairs.com"
   },
   {
+    "id": "11",
     "image": "https://artisticjunkie.com/wp-content/uploads/2017/08/The-Ballet-Class-Edgar-Degas.jpg",
-    "name": "Edgar Degas",
+    "name": "Degas Edgar",
     "nationality": "French",
     "DOB": "June 19, 1834",
     "email": "eddy@degas.com"
   },
   {
+    "id": "12",
     "image": "https://news.artnet.com/app/news-upload/2017/09/vermeer-milkmaid.jpg",
-    "name": "Johannes Vermeer",
+    "name": "Vermeer Johannes",
     "nationality": "Dutch",
     "DOB": "October 1632",
     "email": "johannes@milkmaker.com"
   },
   {
+    "id": "13",
     "image": "https://collectionapi.metmuseum.org/api/collection/v1/iiif/333990/741412/main-image",
-    "name": "Henri de Toulouse-Lautrec",
+    "name": "Toulouse-Lautrec Henri ",
     "nationality": "French",
     "DOB": "November 24, 1864",
     "email": "henri@moulinrouge.com"
   },
   {
+    "id": "14",
     "image": "https://ctl.s6img.com/society6/img/1C-NT2-MHZDPRPN7-w52dL_Zpe8/w_1500/canvas/~artwork/s6-original-art-uploads/society6/uploads/misc/70f3c3715c1648a79cfbc17fa156ee36/~~/gustav-klimt-the-woman-in-gold-canvas.jpg",
-    "name": "Gustave Klimt",
+    "name": "Klimt Gustave",
     "nationality": "Austrian",
     "DOB": "July 14, 1862",
     "email": "gustavo@gold.com"
   },
   {
+    "id": "15",
     "image": "https://i.pinimg.com/originals/70/f7/6f/70f76fc0531e64ed3bc7735ea54a5629.jpg",
-    "name": "Hieronymus Bosch (Jeroen van Aken)",
+    "name": "Bosch Hieronymus (Jeroen van Aken)",
     "nationality": "Dutch",
     "DOB": "year of 1450",
     "email": "vanaken@dutch.com"
   },
   {
+    "id": "16",
     "image": "https://www.henrimatisse.org/images/gallery/the-dance.jpg",
-    "name": "Henri Matisse",
+    "name": "Matisse Henri",
     "nationality": "French",
     "DOB": "December 31, 1869",
     "email": "matisse@dance.com"
   },
   {
+    "id": "17",
     "image": "https://d7hftxdivxxvm.cloudfront.net/?resize_to=fit&width=574&height=787.5&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2FQVTAZFBOPrO2yeQUyv7DgQ%2Flarge.jpg",
-    "name": "Jean-Michel Basquiat",
+    "name": "Basquiat Jean-Michel",
     "nationality": "American",
     "DOB": "December 22, 1960",
     "email": "jeanmichel@crown.com"
   },
   {
+    "id": "18",
     "image": "https://i.pinimg.com/originals/e7/62/f1/e762f13a061164fa715d1c1d1a17b3e3.jpg",
-    "name": "Jackson Pollock",
+    "name": "Pollock Jackson",
     "nationality": "American",
     "DOB": "January 2, 1912",
     "email": "splash@pollock.com"
   },
   {
+    "id": "19",
     "image": "https://hamiltonselway.com/wp-content/uploads/2016/10/1960-Andy-Warhol-1-1030x1024.jpg",
-    "name": "Andy Warhol",
+    "name": "Warhol Andy",
     "nationality": "American",
     "DOB": "August 6, 1928",
     "email": "warhol@campbell.com"
   },
   {
+    "id": "20",
     "image": "https://cdn.britannica.com/42/19342-050-1034FC73/Nighthawks-oil-canvas-Edward-Hopper-Art-Institute-1942.jpg",
-    "name": "Edward Hopper",
+    "name": "Hopper Edward",
     "nationality": "American",
     "DOB": "July 22, 1882",
     "email": "hopper@eddy.com"
   },
   {
+    "id": "21",
     "image": "https://cdn.britannica.com/78/43678-050-F4DC8D93/Starry-Night-canvas-Vincent-van-Gogh-New-1889.jpg",
-    "name": "Vincent van Gogh",
+    "name": "Van Gogh Vincent",
     "nationality": "French",
     "DOB": "March 30, 1853",
     "email": "icanthearyou@ear.com"
