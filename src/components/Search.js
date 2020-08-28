@@ -5,7 +5,7 @@ const searchStyle = {
   margin: "0 auto",
   border: "pink solid 5",
 };
-function Search() {
+function Search({ onsearch }) {
   return (
     <div className="searchbar" style={searchStyle}>
       <input
@@ -13,6 +13,7 @@ function Search() {
         type="text"
         placeholder="Search"
         aria-label="Search"
+        onsearch={onsearch}
       />
     </div>
   );

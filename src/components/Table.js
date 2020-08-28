@@ -4,7 +4,7 @@ import painters from "../painters.json";
 const tableStyle = {
   margin: "10px 40px 10px 40px",
   image: {
-    width: 140,
+    width: 200,
   },
 };
 
@@ -27,7 +27,6 @@ class Table extends React.Component {
             </tr>
           </thead>
           <tbody>
-            {/* creating a new row for each painter */}
             {this.state.painters.map((painter) => (
               <tr>
                 <th scope="row">
