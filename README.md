@@ -2,7 +2,7 @@
 
 ## Description
 
-Created a painter directory with React. The user is able to search for famous painters, - with an autocomplete while typing - and also is able to filter painters by name in alphabetical order.
+Created a painter directory with React. The user is able to search for famous painters - while searching, the results matching with first letters typed will appear first in the table. The user can also filter painters by name in alphabetical order.
 
 ## Table of Contents
 
