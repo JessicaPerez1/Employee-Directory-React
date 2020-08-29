@@ -5,7 +5,6 @@ const navStyle = {
   div: {
     color: "dimGrey",
     backgroundColor: "lavenderBlush",
-    margin: "10px 40px 10px 40px",
     textAlign: "center",
     paddingTop: 40,
     paddingBottom: 40,
@@ -21,7 +20,7 @@ const navStyle = {
 
 function Navbar() {
   return (
-    <div style={navStyle.div}>
+    <div className=" mx-auto" style={navStyle.div}>
       <nav className="navbar justify-content-center navbar-light">
         <span className="navbar-brand h1" style={navStyle.title}>
           The Famous Painter's Rolodex

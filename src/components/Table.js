@@ -1,6 +1,11 @@
 import React from "react";
 import painters from "../painters.json";
 
+const searchStyle = {
+  width: 400,
+  margin: "0 auto",
+  border: "pink solid 5",
+};
 const tableStyle = {
   margin: "10px 40px 10px 40px",
   image: {
@@ -8,27 +13,14 @@ const tableStyle = {
   },
 };
 
-const searchStyle = {
-  width: 300,
-  margin: "0 auto",
-  border: "pink solid 5",
-};
-//SORTING BY NAME ASCENDING ORDER
-//  make headers into on clicks and a function that sorts using a slider(boolean ascending / descending)
-//create sort logic
-// render what comes out of the sort function, which will also need an empty array to fill up with the sorted data
-
 class Table extends React.Component {
   state = {
     painters: painters,
     filteredPainters: painters,
-    resultOrdered: [],
-    resultFiltered: [],
+    resultOrdered: painters,
     search: "",
-    //userInput: "",
   };
-
-  //sort by NAME / alphabetical order
+  //SORTING BY NAME ASCENDING ALPHABETICAL ORDER
   sortByName = () => {
     let sortedNames = this.state.painters;
     sortedNames.map((painter) => {
@@ -44,18 +36,16 @@ class Table extends React.Component {
       }
       return 0;
     });
-    //return <Table />;
-  };
-  //handle click on NAME button
-  handleClick = (event) => {
-    // Preventing the default behavior of the form submit (which is to refresh the page)
-    event.preventDefault();
-    // setting state to the new ordered list
+    console.log(sortedNames);
     this.setState({
-      resultOrdered: this.sortByName(),
+      resultOrdered: sortedNames,
     });
+    // this.setState({
+    //   painters: painters,
+    // });
   };
 
+  //FILTER by name, table updates to match user input
   filterPainters = (e) => {
     const userInput = e.target.value;
     let allPainters = this.state.painters;
@@ -70,12 +60,10 @@ class Table extends React.Component {
   };
 
   render() {
-    //console.log(this.state.painters);
     return (
       <div className="container">
         <div className="searchbar" style={searchStyle}>
           <input
-            //value={this.state.search}
             className="user-type"
             onChange={this.filterPainters}
             type="text"
@@ -90,7 +78,7 @@ class Table extends React.Component {
               <tr>
                 <th scope="col">Image</th>
                 <th scope="col">
-                  <button type="button" onClick={this.handleClick}>
+                  <button type="button" onClick={this.sortByName}>
                     Name
                   </button>
                 </th>
