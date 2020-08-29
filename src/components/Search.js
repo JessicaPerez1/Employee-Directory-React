@@ -7,7 +7,7 @@ const searchStyle = {
 };
 
 class Search extends React.Component {
-  state = { paintersearch: "" };
+  state = { search: "" };
 
   // handleInputChange = (event) => {
   //   // Getting the value and name of the input which triggered the change
@@ -21,7 +21,7 @@ class Search extends React.Component {
     return (
       <div className="searchbar" style={searchStyle}>
         <input
-          value={this.state.search}
+          // value={this.state.paintsearch}
           className="form-control"
           //handleInputChange={this.handleInputChange}
           type="text"

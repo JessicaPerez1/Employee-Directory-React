@@ -21,10 +21,11 @@ const searchStyle = {
 class Table extends React.Component {
   state = {
     painters: painters,
+    filteredPainters: painters,
     resultOrdered: [],
     resultFiltered: [],
-    original: painters,
     search: "",
+    //userInput: "",
   };
 
   //sort by NAME / alphabetical order
@@ -43,6 +44,7 @@ class Table extends React.Component {
       }
       return 0;
     });
+    //return <Table />;
   };
   //handle click on NAME button
   handleClick = (event) => {
@@ -55,31 +57,26 @@ class Table extends React.Component {
   };
 
   filterPainters = (e) => {
-    const userType = e.target.value;
-    let filteredPainters = this.state.painters;
-    console.log(userType);
-    let newPainters = filteredPainters.filter((painter) =>
-      painter.name.toLowerCase().includes(userType.toLowerCase())
+    const userInput = e.target.value;
+    let allPainters = this.state.painters;
+    console.log(userInput);
+    let newPainters = allPainters.filter((painter) =>
+      painter.name.toLowerCase().includes(userInput.toLowerCase())
     );
     console.log(newPainters);
-    return this.setState({
-      painters: newPainters,
+    this.setState({
+      filteredPainters: newPainters,
     });
   };
 
-  reset = () => {
-    this.setState({
-      original: painters,
-    });
-  };
   render() {
     //console.log(this.state.painters);
     return (
-      <>
+      <div className="container">
         <div className="searchbar" style={searchStyle}>
           <input
-            value={this.state.search}
-            className="form-control"
+            //value={this.state.search}
+            className="user-type"
             onChange={this.filterPainters}
             type="text"
             placeholder="Search"
@@ -103,7 +100,7 @@ class Table extends React.Component {
               </tr>
             </thead>
             <tbody>
-              {this.state.painters.map((painter) => (
+              {this.state.filteredPainters.map((painter) => (
                 <tr key={painter.id}>
                   <th scope="row">
                     <img
@@ -121,7 +118,7 @@ class Table extends React.Component {
             </tbody>
           </table>
         </div>
-      </>
+      </div>
     );
   }
 }
