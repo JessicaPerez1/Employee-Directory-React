@@ -1,13 +1,24 @@
 import React from "react";
 
-//include import NAV style sheet maybe
+const root = {
+  div: {
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+    justifyContent: "center",
+    color: "dimGrey",
+    width: "100%",
+    margin: "0",
+  },
+};
 const navStyle = {
   div: {
     color: "dimGrey",
     backgroundColor: "lavenderBlush",
-    textAlign: "center",
-    paddingTop: 40,
-    paddingBottom: 40,
+    // textAlign: "center",
+    // paddingTop: 40,
+    // paddingBottom: 40,
+    width: "100%",
   },
   title: {
     fontSize: 40,
@@ -20,13 +31,16 @@ const navStyle = {
 
 function Navbar() {
   return (
-    <div className=" mx-auto" style={navStyle.div}>
-      <nav className="navbar justify-content-center navbar-light">
-        <span className="navbar-brand h1" style={navStyle.title}>
-          The Famous Painter's Rolodex
-        </span>
-      </nav>
-      <p style={navStyle.subtitle}>Look up your favorite painters!</p>
+    <div style={root.div}>
+      <div style={navStyle.div}>
+        <nav className="navbar justify-content-center navbar-light">
+          <span className="navbar-brand h1" style={navStyle.title}>
+            The Famous Painter's Rolodex
+          </span>
+        </nav>
+        <br />
+        <p style={navStyle.subtitle}>Look up your favorite painters!</p>
+      </div>
     </div>
   );
 }

@@ -1,18 +1,18 @@
 import React from "react";
-//import "./App.css";
+import { BrowserRouter as Router, Route } from "react-router-dom";
 
-import Navbar from "./components/Navbar";
-//import Search from "./components/Search";
+import Welcome from "./pages/Welcome";
+import NavBar from "./components/Navbar";
 
-import Table from "./components/Table";
-//import painters from "./painters.json";
-
+import "./App.css";
 function App() {
   return (
-    <div>
-      <Navbar />
-      <Table />
-    </div>
+    <Router>
+      <div>
+        <NavBar />
+        <Route exact path="/" component={Welcome} />
+      </div>
+    </Router>
   );
 }
 
