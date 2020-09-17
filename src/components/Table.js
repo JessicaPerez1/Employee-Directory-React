@@ -1,18 +1,37 @@
 import React from "react";
 import painters from "../painters.json";
 
+const container = {
+  width: "90%",
+  // margin: "0 auto",
+};
 const searchStyle = {
   width: 400,
   margin: "0 auto",
-  border: "pink solid 5",
+};
+const inputStyle = {
+  height: 50,
+  borderColor: "pink",
+  borderRadius: 10,
+  fontSize: "2rem",
 };
 const tableStyle = {
-  margin: "10px 40px 10px 40px",
+  marginTop: "10px",
   image: {
     width: 200,
   },
 };
-
+const tableHead = {
+  fontSize: "1.5rem",
+};
+const tableRow = {
+  height: "6rem",
+  textAlign: "center",
+  textJustify: "center",
+};
+const tableBody = {
+  fontSize: "1.8rem",
+};
 class Table extends React.Component {
   state = {
     painters: painters,
@@ -61,50 +80,53 @@ class Table extends React.Component {
 
   render() {
     return (
-      <div className="container">
-        <div className="searchbar" style={searchStyle}>
-          <input
-            className="user-type"
-            onChange={this.filterPainters}
-            type="text"
-            placeholder="Search"
-            aria-label="Search"
-            name="search"
-          />
-        </div>
-        <div style={tableStyle}>
-          <table className="table">
-            <thead className="thead-dark">
-              <tr>
-                <th scope="col">Image</th>
-                <th scope="col">
-                  <button type="button" onClick={this.sortByName}>
-                    Name
-                  </button>
-                </th>
-                <th scope="col">Nationality</th>
-                <th scope="col">DOB</th>
-                <th scope="col">Email</th>
-              </tr>
-            </thead>
-            <tbody>
-              {this.state.filteredPainters.map((painter) => (
-                <tr key={painter.id}>
-                  <th scope="row">
-                    <img
-                      src={painter.image}
-                      alt={painter.name}
-                      style={tableStyle.image}
-                    ></img>
+      <div className="container" style={container}>
+        <div className="col-12 mx-auto">
+          <div className="searchbar" style={searchStyle}>
+            <input
+              style={inputStyle}
+              className="user-type"
+              onChange={this.filterPainters}
+              type="text"
+              placeholder="Search"
+              aria-label="Search"
+              name="search"
+            />
+          </div>
+          <div style={tableStyle}>
+            <table className="table">
+              <thead className="thead-dark" style={tableHead}>
+                <tr style={tableRow}>
+                  <th scope="col">Image</th>
+                  <th scope="col">
+                    <button type="button" onClick={this.sortByName}>
+                      Name
+                    </button>
                   </th>
-                  <td>{painter.name}</td>
-                  <td>{painter.nationality}</td>
-                  <td>{painter.DOB}</td>
-                  <td>{painter.email}</td>
+                  <th scope="col">Nationality</th>
+                  <th scope="col">DOB</th>
+                  <th scope="col">Email</th>
                 </tr>
-              ))}
-            </tbody>
-          </table>
+              </thead>
+              <tbody style={tableBody}>
+                {this.state.filteredPainters.map((painter) => (
+                  <tr key={painter.id}>
+                    <th scope="row">
+                      <img
+                        src={painter.image}
+                        alt={painter.name}
+                        style={tableStyle.image}
+                      ></img>
+                    </th>
+                    <td>{painter.name}</td>
+                    <td>{painter.nationality}</td>
+                    <td>{painter.DOB}</td>
+                    <td>{painter.email}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
         </div>
       </div>
     );

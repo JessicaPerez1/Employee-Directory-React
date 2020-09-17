@@ -1,0 +1,23 @@
+/* .root {
+  color: dimGrey;
+  background-color: lavenderBlush;
+  /* text-align: "center"; */
+/* padding-top: "40px";
+  padding-bottom: "40px";
+} */
+.jumbotron {
+  color: dimGrey;
+  background-color: lavenderBlush;
+}
+.display-4 {
+  /* text-align: "center"; */
+  padding-top: "40px";
+  padding-bottom: "40px";
+}
+.navbar-brand {
+  font-size: 3rem;
+  font-weight: "bold";
+}
+.lead {
+  font-size: 1.5rem;
+}
