@@ -2,7 +2,7 @@ import React from "react";
 import painters from "../painters.json";
 
 const container = {
-  width: "90%",
+  width: "100%",
   // margin: "0 auto",
 };
 const searchStyle = {
@@ -80,8 +80,8 @@ class Table extends React.Component {
 
   render() {
     return (
-      <div className="container" style={container}>
-        <div className="col-12 mx-auto">
+      <div className="container mx-auto" style={container}>
+        <div className="col-xs-6 col-md-12 ">
           <div className="searchbar" style={searchStyle}>
             <input
               style={inputStyle}

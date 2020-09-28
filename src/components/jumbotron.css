@@ -5,9 +5,14 @@
 /* padding-top: "40px";
   padding-bottom: "40px";
 } */
+#container {
+  width: 100%;
+  width: 100vw;
+}
 .jumbotron {
   color: dimGrey;
-  background-color: blue;
+  background-color: lavenderblush;
+  height: 15rem;
 }
 .display-4 {
   /* text-align: "center"; */
