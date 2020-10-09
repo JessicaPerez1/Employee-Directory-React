@@ -121,7 +121,11 @@ class Table extends React.Component {
                     <td>{painter.name}</td>
                     <td>{painter.nationality}</td>
                     <td>{painter.DOB}</td>
-                    <td>{painter.email}</td>
+                    <td>
+                      <a id="email" href={"mailto: " + painter.email}>
+                        {painter.email}
+                      </a>
+                    </td>
                   </tr>
                 ))}
               </tbody>
